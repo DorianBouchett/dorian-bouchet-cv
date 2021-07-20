@@ -1,7 +1,5 @@
 import * as React from "react"
-import { Link, PageProps } from "gatsby"
-import Header from "../components/Header"
-import Quote from "../components/Quote"
+import { PageProps } from "gatsby"
 import List from "../components/List"
 import Title1 from "../components/Title1"
 import Title2 from "../components/Title2"
@@ -10,6 +8,8 @@ import DiplomaImageAndText from "../components/DiplomaImageAndText"
 import Footer from "../components/Footer"
 import TitleAndText from "../components/TitleAndText"
 import ImageAndText2 from "../components/ImageAndText2"
+import Header from "../components/Header"
+import Quote from "../components/Quote"
 
 type DataProps = {
   site: {
@@ -27,7 +27,7 @@ const IndexPage: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       img={""}
       svgOn={true}
     />
-    // add an hover effect (Github-like)
+    {/*add an hover effect (Github-like)*/}
 
     <Quote quote={"Zurich-based developer with 3-year experience in React looking for a full-time position as a Professional Front-end Engineer"} theme={"white"}/>
 
